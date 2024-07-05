@@ -1,17 +1,5 @@
 # Analyzing the Performance of OpenMPI’s Collective Operations
 
-## Author
-Muhammad Mubashar Shahzad
-
-## Course
-High Performance Computing
-
-## Institution
-Department of Mathematics and Geosciences, University of Trieste
-
-## Year
-2024
-
 ## Table of Contents
 - [Abstract](#abstract)
 - [Introduction](#introduction)
@@ -24,6 +12,8 @@ Department of Mathematics and Geosciences, University of Trieste
 - [Results and Discussion](#results-and-discussion)
   - [Broadcast Operation](#broadcast-operation)
   - [Reduce Operation](#reduce-operation)
+- [Conclusion](#conclusion)
+- [Author Information](#author-information)
 
 ## Abstract
 This report investigates the performance of OpenMPI collective operations, specifically focusing on broadcast and reduce functions. Using the OSU Micro-Benchmark tool, various algorithms such as binary tree, chain, pipeline, binomial, rabenseifner, and ignore were evaluated under different parameters like message size, number of processes, and number of cores. Experiments conducted on the EPYC partition of the ORFEO high-performance computing cluster revealed that the binary tree and binomial algorithms consistently outperformed others for large message sizes due to their efficient distribution methods. Conversely, the chain algorithm showed poor scalability with increasing message sizes. These findings are supported by linear model analysis, providing insights into optimizing parallel applications using MPI.
@@ -80,12 +70,18 @@ The general equation for latency (L) as a function of the number of processes (P
 - The binomial algorithm maintained stable and low latency.
 - The rabenseifner algorithm showed higher latency peaks, particularly with intermediate core counts.
 
-## Figures
-- 3D Heatmap of broadcast operation for 4 different algorithms.
-- 3D Heatmap of reduce operation for 4 different algorithms.
-- Latency plots for broadcast and reduce operations across different algorithms.
-
 ## Conclusion
 The study provides a comprehensive analysis of OpenMPI's collective operations, offering insights into the performance characteristics of different algorithms. The findings help identify optimal configurations and strategies for various HPC scenarios, ultimately improving application performance using OpenMPI.
 
+## Author Information
+**Author**: Muhammad Mubashar Shahzad
 
+**Course**: High Performance Computing
+
+**Institution**: Department of Mathematics and Geosciences, University of Trieste
+
+**Year**: 2024
+
+---
+
+ Refer to the full report for detailed data, figures, and further discussion.
