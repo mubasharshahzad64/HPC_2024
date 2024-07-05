@@ -13,7 +13,7 @@ module load openMPI/4.1.5/gnu
 
 
 # Navigate to the directory where the source code is located
-cd /u/dssc/vnigam/HPC/exercise3/src/
+cd /u/dssc/mshahzad/HPC/exercise2/src/
 
 # Compile the Mandelbrot program
 mpicc -fopenmp -o mandelbrot_pgm main.c mandelbrot.c -lm
