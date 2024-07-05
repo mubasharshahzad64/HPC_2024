@@ -84,4 +84,4 @@ The study provides a comprehensive analysis of OpenMPI's collective operations, 
 
 ---
 
-Please refer to the full report for detailed data, figures, and further discussion.
+ Refer to the full report for detailed data, figures, and further discussion.
